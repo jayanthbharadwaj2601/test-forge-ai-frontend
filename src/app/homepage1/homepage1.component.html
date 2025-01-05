@@ -1,0 +1,18 @@
+<div class="container3">
+<div class="container2">
+    <img src="https://i.imgur.com/NpFMtte.jpeg" class="img1">
+</div>
+<div class="container1">
+    <button class="button1" (click)="about()">about</button>
+    <button class="button1" (click)="generate()">Generate </button>
+    <button class="button1" (click)="logout()">Logout</button>
+    <!-- <button (click)="signup()" class="button1">Signup</button> -->
+    </div>
+</div>
+<div class="container4">
+<input type="text" #question placeholder="Exam name" class="input1">
+<input type="text" #topic placeholder="Topic/Subject" class="input1">
+<input type="number" #count placeholder="No. of questions" class="input1">
+<input type="text" #difficulty placeholder="Difficulty" class="input1">
+<input type="button" value="Begin" (click)="generate_test(question.value,topic.value,count.value,difficulty.value)" class="button1">
+</div>
