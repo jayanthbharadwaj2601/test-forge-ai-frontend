@@ -1,0 +1,33 @@
+<!-- <img src="https://i.imgur.com/hpJ78ZQ.jpeg" class="img1" width="100px" height="100px"> -->
+<div class="container3">
+    <div class="container2">
+        <img src="https://i.imgur.com/NpFMtte.jpeg" class="img1">
+    </div>
+    <div class="container1">
+        <button class="button1" (click)="about()">about</button>
+        <button class="button1" (click)="generate()">Generate </button>
+        <button class="button1" (click)="logout()">Logout</button>
+        <!-- <button (click)="signup()" class="button1">Signup</button> -->
+    </div>
+    </div> 
+<div class="container123" *ngIf="this.flag==true" >
+<p *ngIf="this.flag==true">{{this.question}}</p>
+<div class="container21">
+<button (click)="reveal_result('a')" *ngIf="this.flag==true" class="button2">a. {{this.oa}}</button>
+<button (click)="reveal_result('b')" *ngIf="this.flag==true" class="button2">b. {{this.ob}}</button>
+</div>
+<br>
+<div class="container21">
+<button (click)="reveal_result('c')"*ngIf="this.flag==true" class="button2">c. {{this.oc}}</button>
+<button (click)="reveal_result('d')" *ngIf="this.flag==true" class="button2">d. {{this.od}}</button>
+</div>
+<br>
+</div>
+<p *ngIf="this.flag1==true" class="input1">{{this.result}}</p>
+<div class="container21">
+<button *ngIf="this.flag==true" (click)="execute()" class="button2">next</button>
+</div>
+<p *ngIf="this.flag2==true" class="input1">{{this.result1}}</p>
+<div class="container21">
+<button  *ngIf="this.flag2==true" (click)="go_back()" class="button2">home</button>
+</div>
